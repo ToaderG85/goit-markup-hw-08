@@ -10,8 +10,8 @@
     transition: opacity $standardtransition, visibility $standardtransition;
     .inner-div {
         position: absolute;
-        max-width: 528px;
-        max-height: 581px;
+        max-width: 450px;
+        max-height: 609px;
         background: $standardwhite;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
@@ -119,14 +119,14 @@
         align-items: center;
         gap: 8px;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 12px;
+        line-height: 1.1;
         letter-spacing: 0.03em;
         color: $standardgrey;
         .terms-link {
             font-weight: 400;
-            font-size: 14px;
-            line-height: 1.7;
+            font-size: 12px;
+            line-height: 1.1;
             letter-spacing: 0.03em;
             color: $standardblue;
         }
@@ -168,6 +168,17 @@
     border-radius: 4px;
     border-color: transparent;
     color: $standardwhite;
-    margin: 0px 124px;
+    margin: 0 auto;
     cursor: pointer;
 }
+
+@media screen and (min-width: 1200px) {
+    .modal .inner-div {
+        max-width: 528px;
+        max-height: 581px;
+    }
+    .client-contact-form .terms {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}    

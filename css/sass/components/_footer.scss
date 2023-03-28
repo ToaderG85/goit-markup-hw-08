@@ -152,3 +152,31 @@
     }
 }
 
+@media screen and (min-width: 1200px){
+    .footer-section__list {
+        justify-content: flex-start;
+        gap: 0px;
+        padding-left: 15px;
+    }
+    .footer-section__item {
+        justify-content: flex-start;
+        align-items: flex-start;
+        .footer-contact-info {
+            align-items: flex-start;
+        }
+    }
+    .footer-social-media {
+        align-items: flex-start;
+    }
+   .footer-subscribe {
+        justify-content: flex-start;
+        align-items: flex-start;
+        &__form {
+            flex-direction: row;
+            gap: 10px;
+            button {
+                margin-top: 0px;
+            }
+        }
+   }
+}

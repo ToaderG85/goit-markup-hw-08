@@ -8,6 +8,7 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-M-1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100% ;
     &__item {
         display: flex;
         justify-content: center;
@@ -17,14 +18,14 @@
 
 @media screen and (min-width: 768px) {
     .hero-section {
-        background-image: url(../images/hero/hero-T-1x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-T-1x.jpg);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hero-section {
-        height: 600px;
-        background-image: url(../images/hero/hero-D-1x.jpg);
+        // height: 600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-D-1x.jpg);
     }
 }
 
@@ -32,7 +33,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-section {        
-        background-image: url(../images/hero/hero-M-2x.jpg); 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-M-2x.jpg); 
     }
 }
 
@@ -40,7 +41,7 @@
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero-section {        
-        background-image: url(../images/hero/hero-T-2x.jpg); 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-T-2x.jpg); 
     }
 }
 
@@ -48,7 +49,7 @@
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .hero-section {        
-        background-image: url(../images/hero/hero-D-2x.jpg); 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-D-2x.jpg); 
     }
 }
 
@@ -221,6 +222,9 @@
         flex-direction: column;
         gap: 30px;
         padding-bottom: 30px;
+        picture {
+            max-width: 100%;
+        }
         .employee__details {
             display: flex;
             flex-direction: column;
