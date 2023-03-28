@@ -44,8 +44,6 @@
     }
     &__item {
         box-sizing: border-box;
-        width: 370px;
-        height: 404px;
         left: 215px;
         top: 262px;
         background: $standardwhite;
@@ -53,8 +51,6 @@
         overflow: hidden;
         &:hover {
             box-sizing: border-box;
-            width: 370px;
-            height: 404px;
             left: 215px;
             top: 262px;
             background: $standardwhite;
@@ -67,13 +63,9 @@
         }
         .project__logo {
             position: relative;
-            width: 370px;
-            height: 294px;
             overflow: hidden;
             .overlay {
                 position: absolute;
-                width: 370px;
-                height: 294px;
                 transition: $standardtransition;
                 opacity: 0.9;
                 background-color: $standardblue;
