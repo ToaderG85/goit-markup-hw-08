@@ -1,0 +1,53 @@
+@import "../css/sass/utils/vars";
+@import "../css/sass/components/_modal";
+@import "../css/sass/components/_footer";
+@import "../css/sass/components/_header";
+@import "../css/sass/components/_portofolio";
+@import "../css/sass/components/_index";
+@import "../css/sass/components/_mobile-menu";
+
+html {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.unstyled-list {
+    list-style: none;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $standardgrey;
+    text-decoration: none;
+}
+
+*{margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px
+}
+.section {
+    padding: 94px 0px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        width: 1200px;
+    }
+}

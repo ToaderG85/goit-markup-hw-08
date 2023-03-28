@@ -1,0 +1,112 @@
+.header-section-container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    .logo-style {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: $standardblue;
+        text-decoration: none;
+    }
+    .second-logo {
+        color: $standardtextcolor;
+    }
+    .nav__list {
+        display: flex;
+        gap: 50px;
+    }
+    .nav__list,
+    .top-contact {
+        margin: 0 0 0 auto ;
+    }   
+}
+
+.header-section-nav {
+    &__list {
+        display: flex;
+        margin-left: 90px;
+        gap: 50px;
+    }
+    &__item {
+        position: relative;
+        a {
+            &::after {
+                content: '';
+                border: 2px solid $standardblue;
+                width: 100%;
+                position: absolute;
+                bottom: -30px;
+                border-radius: 2px;
+                visibility: hidden;
+                left: 0;
+            }
+        
+            &:focus::after {
+                visibility: visible;
+            }  
+        }         
+        .nav__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+            color: $standardtextcolor;
+            text-decoration: none;
+            transition: color $standardtransition;
+            &.active {
+                color: $standardblue;
+                padding-bottom: 27px;
+                border-bottom: 4px solid $standardblue;
+                border-radius: 2px;
+            
+            }
+            &:hover,
+            &:focus {
+                color: $standardblue;
+            }       
+        }
+    }
+}
+
+.top-contact {
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item {
+        svg {
+            fill: currentColor;
+        }
+        a {
+            color:$standardgrey;
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+            transition: color $standardtransition;
+            &:hover,
+            &:focus {
+                color: $standardblue;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-contact {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .top-contact__list{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+}

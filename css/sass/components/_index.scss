@@ -1,0 +1,317 @@
+/*HeroSection*/
+
+.hero-section{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-M-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: url(../images/hero/hero-T-1x.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-section {
+        height: 600px;
+        background-image: url(../images/hero/hero-D-1x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {        
+        background-image: url(../images/hero/hero-M-2x.jpg); 
+    }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) ,
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero-section {        
+        background-image: url(../images/hero/hero-T-2x.jpg); 
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) ,
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero-section {        
+        background-image: url(../images/hero/hero-D-2x.jpg); 
+    }
+}
+
+.bussiness-object {
+    font-weight: 900;
+    width: 360px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $standardwhite;
+}
+.request-service-button {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $standardwhite;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    background: $standardblue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    .bussiness-object {        
+        font-size: 44px;
+        line-height: 1.4;
+        width: 696px;
+        height: 120px;
+    }
+}
+
+/*OurValuesSection*/
+
+.our-values-section {
+    padding-bottom: 0px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__item {
+        box-sizing: border-box;
+        border: 1px solid transparent;
+    }
+}
+
+.value{
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; 
+    }    
+    &__item{      
+        .value__title {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $standardtextcolor;
+            padding-bottom: 10px;
+
+            }
+        .value__description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: $standardgrey;
+        }
+    }
+    &__image {        
+        border-radius: 4px;
+        background-color: #F5F4FA;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .our-values-section__item {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .our-values-section__item {
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+}
+
+/*WhatWeDo/OurTeam-Sections*/
+
+.what-we-do-section,
+.our-team-section,
+.regular-customer-section {
+    .section__subtitle {
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $standardtextcolor;
+        padding-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center
+    }
+}
+
+.what-we-do-section {
+    &__list {
+        position: relative;
+        .box {
+            position: relative;
+            }
+        .box-title {
+            position: absolute;
+            bottom: 0;
+            width: 370px;
+            height: 70px;
+            background: rgba(47, 48, 58, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $standardwhite;
+        }
+        &:nth-child(1) {
+             z-index: 1;
+        }              
+        &:nth-child(2) {
+             z-index: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .what-we-do-section {
+        display: none;
+    }
+}
+
+.our-team-section {   
+    background: #F5F4FA;
+    &__item{
+        background: $standardwhite;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 30px;
+        .employee__details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            image-title {
+                font-size: 18px;
+                line-height: 2;
+                letter-spacing: 0.06em;
+                color: $standardtextcolor;
+            }
+            .image-description {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.9;
+                letter-spacing: 0.03em;
+                color: $standardgrey;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 768px) {
+//     .our-team-section__item {
+//         flex-basis: calc((100% - 2 * 30px) / 2);
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .our-team-section__item {
+//         flex-basis: calc((100% - 3 * 30px) / 4);
+//     }
+// }
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    &__item {
+        width: 44px;
+        height: 44px;
+        background-color: $standardwhite;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: #AFB1B8;
+            transition: background-color, color $standardtransition;
+            &:hover{
+                color: $standardwhite;
+                background-color: $standardblue;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        svg {
+            fill: currentColor;
+        }
+    }
+}
+
+/*RegularCustomersSection*/
+
+.regular-customer-section {
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    &__item {
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        svg {
+            fill: currentColor;
+        }
+        a {
+            color: #AFB1B8;
+            transition: color $standardtransition;
+            &:hover{
+                color: $standardblue;
+                background-color: $standardwhite;
+                width: 170px;
+                height: 95px;
+                border: 1px solid $standardblue;
+                border-radius: 4%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

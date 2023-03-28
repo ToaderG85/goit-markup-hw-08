@@ -1,0 +1,114 @@
+.project-section-button{
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+    &__item {
+        .button-style {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $standardtextcolor;
+            text-decoration: none;
+            background: #F5F4FA;
+            border-style: hidden;
+            border-radius: 4px;
+            padding: 6px 22px;
+            cursor: pointer;
+            transition: background-color, color $standardtransition;
+            &:hover,
+            &:focus {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.6;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $standardwhite;
+                background: $standardblue;
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                border-radius: 4px;
+            }
+        }
+    }   
+} 
+
+.project-section-card {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        box-sizing: border-box;
+        width: 370px;
+        height: 404px;
+        left: 215px;
+        top: 262px;
+        background: $standardwhite;
+        border: 1px solid #EEEEEE;
+        overflow: hidden;
+        &:hover {
+            box-sizing: border-box;
+            width: 370px;
+            height: 404px;
+            left: 215px;
+            top: 262px;
+            background: $standardwhite;
+            border: 1px solid #EEEEEE;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+            .project__logo .overlay{
+                transform: translateY(-101%);
+            }
+        }
+        .project__logo {
+            position: relative;
+            width: 370px;
+            height: 294px;
+            overflow: hidden;
+            .overlay {
+                position: absolute;
+                width: 370px;
+                height: 294px;
+                transition: $standardtransition;
+                opacity: 0.9;
+                background-color: $standardblue;
+                transform: translateY(0%);
+                color: $standardwhite;
+                display: flex;
+                align-items: center;
+                text-align: justify;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.6;
+                letter-spacing: 0.03em;
+                padding: 0px 24px;
+            }
+        }
+        .project__description {
+            padding-top: 20px;
+            height: 110px;
+            background-color: $standardwhite;
+            .image-title {
+                font-size: 18px;
+                line-height: 2;
+                letter-spacing: 0.06em;
+                padding-left: 24px;
+                color: $standardtextcolor;
+            }
+            .image-description {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.9;
+                letter-spacing: 0.03em;
+                padding-left: 24px;
+                color: $standardgrey;
+            }
+        }
+    } 
+}
+

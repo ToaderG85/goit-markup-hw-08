@@ -1,0 +1,154 @@
+.footer-section {
+    background: $backgroudcolor;
+    padding: 60px 0px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        width: 301px;
+        .footer-contact-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logo-style {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-size: 26px;
+                line-height: 1.2;
+                letter-spacing: 0.03em;
+                color: $standardblue;
+                text-decoration: none;
+            }
+            .second-logo {
+                color: $standardwhite
+            }
+            .adress-line {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: 0.03em;
+                color: $standardwhite;
+                font-style: normal;
+                padding-top: 30px;
+            }
+            .contact-method {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: 0.03em;
+                color: rgba(255, 255, 255, 0.6);
+                font-style: normal;
+                text-decoration: none;
+                cursor: pointer;
+                padding-bottom: 12px;
+                padding-top: 12px;
+            }
+        }      
+    }
+}
+    
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $standardwhite;
+        font-style: normal;
+        padding-bottom: 20px;
+    }
+    &__list{
+        display: flex;
+        gap: 10px;
+    }
+    &__item {
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.1);;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: $standardwhite;
+            transition: background-color $standardtransition;
+            &:hover{
+                color: $standardwhite;
+                background-color: $standardblue;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        svg {
+             fill: currentColor;  
+        }
+    }
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $standardwhite;
+        font-style: normal;
+        padding-bottom: 20px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            width: 358px;
+            height: 50px;
+            padding-left: 16px;
+            outline: none;
+            cursor: pointer;
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            background: $standardblue;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 1.9;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+            letter-spacing: 0.06em;
+            color: $standardwhite;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+        }
+        svg{
+            fill: currentColor;
+            color: $standardwhite;
+        } 
+    }
+}
